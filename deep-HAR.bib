@@ -1,0 +1,386 @@
+% Encoding: UTF-8
+
+@InProceedings{Ming2015Convolutional,
+  author    = {Ming, Zeng and Le, T. Nguyen and Bo, Yu and Mengshoel, Ole J. and Jiang, Zhu and Pang, Wu and Zhang, Joy},
+  title     = {Convolutional Neural Networks for Human Activity Recognition using Mobile Sensors},
+  booktitle = {International Conference on Mobile Computing},
+  year      = {2015},
+  comment   = {文章提出一种自动提取活动识别的判别特征的方法，这种方法是基于卷积神经网络 CNN，该方法可以捕获语音识别和图像识别领域中已经显示的信号的局部依赖性和尺度不变性。同时提出了一种改进的称重分享技术，称为部分重量分配，并将其应用于加速度计信号以获得进一步改进。在三个公共数据集 Skoda（装配线活动）、Opportunity（厨房活动）、Actitracker（慢跑，步行等）进行实验，实验结果表明，基于 CNN 的方法准确率达到了 90%。
+},
+}
+
+@Article{Murad2017Deep,
+  author  = {Murad, A and Pyun, J. Y.},
+  title   = {Deep Recurrent Neural Networks for Human Activity Recognition},
+  journal = {Sensors},
+  year    = {2017},
+  volume  = {17},
+  number  = {11},
+  pages   = {2556},
+  comment = {文章提出使用深回归神经网络 DRNN 来建立识别模型，该模型能够捕获变长输入序列中的长距离依赖。该文章提出基于长期短期记忆 LSTM 的 DRNN 模型，分别有三种结构单向体系结构、双向体系结构和级联体系结构，并评估其在各种基准数据集上的有效性。实验结果表明文章提出的模型胜过了采用传统机器学习的方法，如支持向量机 SVM 和 k-近邻 KNN。},
+}
+
+@Article{Zhao2017Deep,
+  author  = {Zhao, Yu and Yang, Rennong and Guillaume, Chevalier and Gong, Maoguo and Zhao, Yu and Yang, Rennong and Guillaume, Chevalier and Gong, Maoguo and Zhao, Yu and Yang, Rennong},
+  title   = {Deep Residual Bidir-LSTM for Human Activity Recognition Using Wearable Sensors},
+  year    = {2017},
+  comment = {密苏里科技大学的研究人员提出了一种融合深度卷积神经网络（DCNN）的人物行为识别方法，原始的陀螺仪和加速度计数据经过加窗形成若干重叠的数据向量，然后将６－维度的传感器向量混叠后进行傅里叶变换获得频域的表示，然后DCNN直接对频域的数据进行监督学习训练。训练完成后的DCNN，实际上构成一种适合于可穿戴设备数据的特征提取器，对于后续的测试而言，只要将６－维度的传感器向量进行上述加窗－混叠－傅里叶变换确定性变换，就能够提取出DCNN的特征，并进行行为识别。经过实验验证，基于DCNN的行为识别方法，在三种公开的数据集（UCI，USC，SHO）上均达到了超过95%的识别率，因此是一种非常具有应用前景的行为识别方法。
+
+基于深度学习与可穿戴传感器的人体行为识别-南京信息工程大学_匡晓华},
+}
+
+@Article{Hammerla2016Deep,
+  author  = {Hammerla, Nils Y. and Halloran, Shane and Ploetz, Thomas},
+  title   = {Deep, Convolutional, and Recurrent Models for Human Activity Recognition using Wearables},
+  journal = {Journal of Scientific Computing},
+  year    = {2016},
+  volume  = {61},
+  number  = {2},
+  pages   = {454-476},
+  comment = {文献[31]使用 5 个隐藏层的DNN 网络结构进行活动识别的分类任务，相比于 ANN 对活动进行分类的任务取得了很好的成果。从以上这些文献的工作中观察到，人类活动识别的数据是多维的，而且相对比较复杂，因此最好使用更多的隐藏层去自动特征学习数据特征，以达到更好地识别效果。},
+}
+
+@Article{Jiang2015Human,
+  author  = {Jiang, Wenchao and Yin, Zhaozheng},
+  title   = {Human Activity Recognition using Wearable Sensors by Deep Convolutional Neural Networks},
+  year    = {2015},
+  comment = {文献[34,35,36]将传感器数据与时间信息结合成二维矩阵的形式，类似于单轴的图片信息，通过这种组合方式保留了传感器之间的相关性和时间序列的信息。
+
+基于传感器数据和深度学习的日常活动识别方法研究-哈尔滨工业大学_李佳珍},
+}
+
+@Article{Ravi2017A,
+  author  = {Ravi, D and Wong, C and Lo, B and Yang, G. Z.},
+  title   = {A Deep Learning Approach to on-Node Sensor Data Analytics for Mobile or Wearable Devices},
+  journal = {IEEE J Biomed Health Inform},
+  year    = {2017},
+  volume  = {21},
+  number  = {1},
+  pages   = {56-64},
+  comment = {For instance, Ravì, Wong, Lo, et al. (2017) propose spectrogram representation to transform the motion sensor data (accelerometer and gyroscope) into local temporal convolution to reduce computational complexity. 
+例如，Ravi, Wong, Lo, et al.(2017)提出用谱图表示将运动传感器数据(加速度计和陀螺仪)转换为局部时间卷积，以降低计算复杂度。},
+}
+
+@InProceedings{Chen2016A,
+  author    = {Chen, Yuqing and Yang, Xue},
+  title     = {A Deep Learning Approach to Human Activity Recognition Based on Single Accelerometer},
+  booktitle = {IEEE International Conference on Systems},
+  year      = {2016},
+  comment   = {Other works modified the convolutional kernel of Convolutional Neural Network to capture temporal dependencies from multiple sensors (Chen &
+Xue, 2015).
+
+In study by Yuqing Chen and Xue (2015), instead of developing new CNN architecture modified the convolutional kernel using transfer learning to suit the tri-axial characteristics of acceleration signal for human activity recognition.
+
+Chen Yuqing和Xue(2015)在研究中没有开发新的CNN架构，而是利用转移学习对卷积核进行了修改，使其适应人类活动识别加速度信号的三轴特性。},
+}
+
+@Article{ronao2016human,
+  author  = {Ronao, Charissa Ann and Cho, Sungbae},
+  title   = {Human activity recognition with smartphone sensors using deep learning neural networks},
+  journal = {Expert Systems With Applications},
+  year    = {2016},
+  volume  = {59},
+  pages   = {235--244},
+  comment = {A comprehensive implementation of Convolutional Neural Network (CNN) for human activity recognition using mobile phone sensor data was reported by Ronao and Cho (2016) and Ronaoo and Cho (2015). In their study, Convolutional Neural Network was deployed to extract hierarchical and translational invariant features from accelerometer and gyroscope sensor data and activity details classified using Multinomial Logistic regression (SoftMax). However, the method failed to capture temporal variance and change in complex activity detail and generalisation to different activity models. Furthermore, intra-class and inter-class variations can be solved by incorporating time-frequency convolution which was not implemented in the study.
+
+Ronao and Cho(2016)和Ronaoo and Cho(2015)报道了利用手机传感器数据对人类活动进行识别的卷积神经网络(CNN)的全面实现。
+在他们的研究中，利用卷积神经网络从加速度计和陀螺仪传感器的数据和活动细节中提取分层平动不变特征，使用多项式逻辑回归(SoftMax)进行分类。
+然而，该方法未能捕捉到复杂活动细节的时变和变化，以及对不同活动模型的推广。
+此外，类内和类间的变化可以通过结合本研究中没有实现的时频卷积来解决。},
+}
+
+@Article{Charalampous2016On,
+  author  = {Charalampous, Konstantinos and Gasteratos, Antonios},
+  title   = {On-line deep learning method for action recognition},
+  journal = {Pattern Analysis \& Applications},
+  year    = {2016},
+  volume  = {19},
+  number  = {2},
+  pages   = {337-354},
+  comment = {基于视频的
+
+While Charalampous and Gasteratos (2016) examined the use of the convolutional neural network for online deep learning feature extraction using the whole data sequence. Moreover, they introduce Viterbi algorithm using optimisation criterion and a network of computational nodes in hierarchical form to increase performance of the network. However, the proposed approach applied entire sample of the sensor dataset to implement the CNN and this may increase the computation time for mobile and wearable devices implementation.
+
+Charalampous和Gasteratos(2016)研究了卷积神经网络用于利用整个数据序列进行在线深度学习特征提取的方法。
+并引入了优化准则的Viterbi算法和分层计算节点网络，提高了网络的性能。
+然而，该方法采用传感器数据集的整个样本来实现CNN，这可能会增加移动和可穿戴设备实现的计算时间。},
+}
+
+@InProceedings{Ha2016Multi,
+  author    = {Ha, Sojeong and Yun, Jeong Min and Choi, Seungjin},
+  title     = {Multi-modal Convolutional Neural Networks for Activity Recognition},
+  booktitle = {IEEE International Conference on Systems},
+  year      = {2016},
+  comment   = {On the other hand, Ha, Yun, and Choi (2015) proposed a 2-D kernel convolutional neural network to capture local dependencies over time and spatial dependencies over sensors and this is important where multiple sensors are attached to different part of the body. When using 1-D kernel convolution, it will be difficult to capture features from different sensor modalities. 
+
+另一方面，Ha、Yun和Choi(2015)提出了一个二维核卷积神经网络，用于捕获传感器在时间和空间上的局部依赖关系，这在多个传感器连接到身体不同部位的情况下非常重要。
+当使用一维核卷积时，很难从不同的传感器模式中捕获特征。
+},
+}
+
+@Article{ravi2017a,
+  author  = {Ravi, Daniele and Wong, Charence and Lo, Benny and Yang, Guangzhong},
+  title   = {A deep learning approach to on-node sensor data analytics for mobile or wearable devices},
+  journal = {IEEE Journal of Biomedical and Health Informatics},
+  year    = {2017},
+  volume  = {21},
+  number  = {1},
+  pages   = {56--64},
+  comment = {Implementation of deep learning algorithm on low-power wearable devices was recently reported in Ravi, Wong, Lo, and Yang (2016a,b). They proposed a temporal convolutional neural network that limits the number of hidden layer connections with few input nodes to avoid computational complexity and enable realtime activity recognition. Furthermore, the authors applied spectral representation of the inertial sensor to achieve invariance to sensor placement, orientation and data collection rate. The authors later reported successive implementation combined handcrafted features to reduce computation time and enhance on-board wearable devices implementation (Ravì, Wong, Lo, et al., 2017).
+
+最近Ravi, Wong, Lo, and Yang (2016a,b)报道了在低功耗可穿戴设备上实现深度学习算法。
+他们提出了一种时序卷积神经网络，它限制了输入节点较少的隐含层连接的数量，以避免计算复杂性，并支持实时活动识别。
+此外，作者还利用惯性传感器的频谱表示来实现传感器位置、方向和数据采集速率的不变性。
+作者后来报道了连续的实现结合了手工制作的功能，以减少计算时间和增强机载可穿戴设备的实现(Ravi, Wong, Lo, et al.， 2017)。},
+}
+
+@InProceedings{Ravi2016Deep,
+  author    = {Ravi, Daniele and Wong, Charence and Lo, Benny and Yang, Guang Zhong},
+  title     = {Deep learning for human activity recognition: A resource efficient implementation on low-power devices},
+  booktitle = {IEEE International Conference on Wearable \& Implantable Body Sensor Networks},
+  year      = {2016},
+  comment   = {Implementation of deep learning algorithm on low-power wearable devices was recently reported in Ravi, Wong, Lo, and Yang (2016a,b). They proposed a temporal convolutional neural network that limits the number of hidden layer connections with few input nodes to avoid computational complexity and enable realtime activity recognition. Furthermore, the authors applied spectral representation of the inertial sensor to achieve invariance to sensor placement, orientation and data collection rate. The authors later reported successive implementation combined handcrafted features to reduce computation time and enhance on-board wearable devices implementation (Ravì, Wong, Lo, et al., 2017).
+
+最近Ravi, Wong, Lo, and Yang (2016a,b)报道了在低功耗可穿戴设备上实现深度学习算法。
+他们提出了一种时序卷积神经网络，它限制了输入节点较少的隐含层连接的数量，以避免计算复杂性，并支持实时活动识别。
+此外，作者还利用惯性传感器的频谱表示来实现传感器位置、方向和数据采集速率的不变性。
+作者后来报道了连续的实现结合了手工制作的功能，以减少计算时间和增强机载可穿戴设备的实现(Ravi, Wong, Lo, et al.， 2017)。},
+}
+
+@InProceedings{Vepakomma2015A,
+  author    = {Vepakomma, Praneeth and De, Debraj and Das, Sajal K and Bhansali, Shekhar},
+  title     = {A-Wristocracy: Deep Learning on Wrist-worn Sensing for Recognition of User Complex Activities},
+  booktitle = {IEEE International Conference on Wearable \& Implantable Body Sensor Networks},
+  year      = {2015},
+  comment   = {For full implement of automate activity recognition techniques for wearable, Vepakomma, De, Das, and Bhansali (2015) proposed A-Aristocracy , a wristband platform to recognise simple and complex activity using a Deep Neural Network (DNN) classifier for the elderly health monitoring. The propose platform was tested for its performance on detection of daily living and instrumental activity of daily living (cooking, washing plates, doing laundry) (ADL/IADL). The use of wearable sensors ensures the privacy of the elderly are maintained, which is a big issue when camera-based sensors are deployed for activity recognition. Moreover, the work employed affordable wearable devices and multimodal information such as locomotion sensing, environmental condition and contextual location signal sensing to achieve high recognition accuracy. However, the study only used a Deep Neural Network with two layers for classification and extracted statistical and manual features defeating the purpose of automatic feature extraction.
+
+Vepakomma、De、Das和Bhansali(2015)提出了A-Aristocracy，为了全面实现可穿戴设备的自动化活动识别技术，利用深度神经网络(DNN)分类器为老年人健康监测提供一个腕带平台，用于识别简单和复杂的活动。
+测试了该平台在日常生活检测和日常生活(做饭、洗盘子、洗衣)仪器活动(ADL/IADL)方面的性能。
+穿戴式传感器的使用确保了老年人的隐私得到了维护，这是部署基于摄像头的传感器进行活动识别时的一大问题。
+此外，该工作采用价格低廉的可穿戴设备和运动感知、环境条件、上下文位置信号感知等多模态信息，实现了较高的识别精度。
+然而，本研究仅采用了两层深度神经网络进行分类，提取的统计特征和人工特征均达不到自动特征提取的目的。},
+}
+
+@InProceedings{Min2016Short,
+  author    = {Min, Sheng and Jing, Jiang and Su, Benyue and Tang, Qingfeng and Yahya, Ali Abdullah and Wang, Guangjun},
+  title     = {Short-time activity recognition with wearable sensors using convolutional neural network},
+  booktitle = {Acm Siggraph Conference on Virtual-reality Continuum \& Its Applications in Industry},
+  year      = {2016},
+  comment   = {Sheng et al. (2016) proposed quick and short time activity recognition using convolutional neural network for wearable devices. Long time activities comprise series of short-term activity which is segmented using short window length. Therefore, by constructing an over-complete pattern library of long time activities into short time activities using sliding window techniques, feature extraction was implemented offline and learning for recognition was performed online to ensure real-time and continuous activity description. However, the use of short time window length may result in loss of vital information for complex activity recognition (O. Banos et al., 2015).
+
+Sheng等(2016)提出了一种基于卷积神经网络的可穿戴设备快速、短时间的活动识别方法。
+长时间活动包括一系列短期活动，使用短窗口长度进行分割。
+因此，利用滑动窗口技术，将一个过于完整的长时间活动模式库构建为短时间活动，离线进行特征提取，在线进行识别学习，保证活动描述的实时性和连续性。
+然而，使用短时间窗口长度可能导致复杂活动识别的关键信息丢失(O. Banos et al.， 2015)。},
+}
+
+@Article{liu2016convolution,
+  author  = {Liu, Guocheng and Liang, Jinhao and Lan, Gongjin and Hao, Qi and Chen, Mei},
+  title   = {Convolution neutral network enhanced binary sensor network for human activity recognition},
+  journal = {ieee sensors},
+  year    = {2016},
+  pages   = {1--3},
+  comment = {G. Liu et al. (2016) modelled binary sensor based human activity recognition by converting the sensor value into a binary number and extracting discriminative features with convolutional neural network. The far-reaching effect of the study is the ability to reduce computational time using fewer binary values during feature extraction from sensor data.
+
+G. Liu et al.(2016)通过将传感器值转换为二进制数，利用卷积神经网络提取识别特征，建立了基于二进制传感器的人类活动识别模型。
+该研究的深远影响是在从传感器数据中提取特征时，能够使用更少的二进制值减少计算时间。},
+}
+
+@Article{YaoEfficient,
+  author  = {Yao, Rui and Lin, Guosheng and Shi, Qinfeng and Ranasinghe, Damith C.},
+  title   = {Efficient Dense Labelling of Human Activity Sequences from Wearables using Fully Convolutional Networks},
+  journal = {Pattern Recognition},
+  comment = {R. Yao et al. (2017) proposed the use of CNN for dense labelling in human activity recognition. The use of dense labelling provides an approach to avoid missing information, and the algorithm was implemented using publicly available datasets with an overall accuracy of 91.2%.
+
+R. Yao等(2017)提出在人类活动识别中使用CNN进行密集标签。
+密集标签的使用提供了一种避免丢失信息的方法，该算法使用公开的数据集实现，总体精度为91.2%。},
+}
+
+@InProceedings{Chen2016LSTM,
+  author    = {Chen, Yuwen and Zhong, Kunhua and Ju, Zhang and Sun, Qilong and Zhao, Xueliang},
+  title     = {LSTM Networks for Mobile Human Activity Recognition},
+  booktitle = {International Conference on Artificial Intelligence: Technologies \& Applications},
+  year      = {2016},
+  comment   = {Recently various studies have explored different recurrent neural network models for modelling human activity recognition. For instance, studies such as (Chen, Zhong, Zhang, Sun, & Zhao, 2016; X. Ma, Tao, Wang, Yu, & Wang, 2015) proposed long short term memory (LSTM) for feature extraction to recognise activity of daily living using WISDM data, a publicly available dataset by Wireless Sensor Data Mining Lab (Kwapisz, Weiss, & Moore, 2011) and achieved a classification accuracy of 95.1%. Despite the high performance obtained, the result cannot be generalised due to the simplicity of the specified activities and small sample sizes of the dataset. Therefore, larger datasets are required to improve the robustness of the algorithm.
+
+近年来，各种各样的研究探索了不同的递归神经网络模型来模拟人类活动识别。
+如(Chen, Zhong, Zhang, Sun， & Zhao, 2016;
+X. Ma, Tao, Wang, Yu， & Wang, 2015)提出利用无线传感器数据挖掘实验室(Kwapisz, Weiss， & Moore, 2011)公开的数据集WISDM数据进行特征提取识别日常生活活动的长短时记忆(long - short term memory, LSTM)，分类准确率为95.1%。
+尽管获得了很高的性能，但由于指定活动的简单性和数据集的样本容量较小，结果不能一般化。
+因此，需要更大的数据集来提高算法的鲁棒性。},
+}
+
+@Article{DBLP:journals/corr/InoueIN16,
+  author        = {Masaya Inoue and Sozo Inoue and Takeshi Nishida},
+  title         = {Deep Recurrent Neural Network for Mobile Human Activity Recognition with High Throughput},
+  journal       = {CoRR},
+  year          = {2016},
+  volume        = {abs/1611.03607},
+  archiveprefix = {arXiv},
+  comment       = {Inoue et al. (2016) investigated the use of the deep recurrent neural network for human activity recognition in real time scenario. They looked at the best combination of architecture and optimal parameter values for increased performance. The authors noted that, increasing the layer of deep RNN will greatly increase computational time and memory usage and recommend a threelayer architecture for optimal performance. 
+To reduce memory usage, (Edel & Köppe, 2016) developed optimised binary version of Bidirectional LSTM for human activity recognition in a resource constrained environment such as mobile or wearable devices.
+
+Inoue等(2016)研究了深度递归神经网络在人类活动实时场景识别中的应用。
+为了提高性能，他们研究了体系结构和最佳参数值的最佳组合。
+作者指出，增加深层RNN层将大大增加计算时间和内存使用，并建议使用三层架构以获得最佳性能。
+为了减少内存使用，(Edel & Koppe, 2016)开发了优化的双向LSTM二进制版本，用于在移动或可穿戴设备等资源受限环境下的人类活动识别。},
+  eprint        = {1611.03607},
+  url           = {http://arxiv.org/abs/1611.03607},
+}
+
+@InProceedings{Edel2016Binarized,
+  author    = {Edel, Marcus and Koppe, Enrico},
+  title     = {Binarized-BLSTM-RNN based Human Activity Recognition},
+  booktitle = {International Conference on Indoor Positioning \& Indoor Navigation},
+  year      = {2016},
+  comment   = {To reduce memory usage, (Edel & Köppe, 2016) developed optimised binary version of Bidirectional LSTM for human activity recognition in a resource constrained environment such as mobile or wearable devices.
+
+为了减少内存使用，(Edel & Koppe, 2016)开发了优化的双向LSTM二进制版本，用于在移动或可穿戴设备等资源受限环境下的人类活动识别。},
+}
+
+@InProceedings{Bhattacharya2016From,
+  author    = {Bhattacharya, Sourav and Lane, Nicholas D.},
+  title     = {From smart to deep: Robust activity recognition on smartwatches using deep learning},
+  booktitle = {IEEE International Conference on Pervasive Computing \& Communication Workshops},
+  year      = {2016},
+  comment   = {Recently, other studies incorporated the convolutional neural network and sparse coding to produce sparse representation and reduce computational time. This can be seen in recent work by Bhattacharya and Lane (2016), which proposed sparse coding-based convolutional neural network for mobile based activity recognition. To reduce computation time, memory and processor usage, they introduced sparsification of the fully connected layer and separation of the convolutional kernel. The techniques ensure full optimisation of CNN to be implemented for mobile devices.
+
+近年来，其他研究将卷积神经网络与稀疏编码相结合，产生稀疏表示，减少计算时间。
+这可以从Bhattacharya和Lane(2016)最近的研究中看出，他们提出了基于稀疏编码的卷积神经网络用于移动的活动识别。
+为了减少计算时间、内存和处理器的使用，他们引入了全连接层的稀疏化和卷积核的分离。
+这些技术保证了CNN在移动设备上的充分优化。},
+}
+
+@Article{DBLP:journals/corr/LiZZCMFB17,
+  author        = {Xinyu Li and Yanyi Zhang and Jianyu Zhang and Shuhong Chen and Ivan Marsic and Richard A. Farneth and Randall S. Burd},
+  title         = {Concurrent Activity Recognition with Multimodal {CNN-LSTM} Structure},
+  journal       = {CoRR},
+  year          = {2017},
+  volume        = {abs/1702.01638},
+  archiveprefix = {arXiv},
+  comment       = {To recognise and detect complex activity details, there is a need to capture spatial and temporal dependencies involve in human activity recognition. The convolutional neural network and recurrent neural network are important deep learning methods in this regard. The techniques are common in multimodal and multi-sensor activity recognition frameworks. X. Li et al. (2017) investigated the use of CNN and LSTM for recognition of concurrent activities. The authors introduced encoder to output binary code prediction that denotes whether the activity is in progress or not in progress. Furthermore, the architecture can accept input from the sensor of different modalities
+
+要识别和检测复杂的活动细节，需要捕获人类活动识别中涉及的空间和时间依赖性。
+卷积神经网络和递归神经网络是这方面重要的深度学习方法。
+这些技术在多模态和多传感器活动识别框架中很常见。
+X. Li et al.(2017)研究了利用CNN和LSTM识别并发活动。
+作者引入编码器来输出二进制代码预测，该预测表示活动是否在进行中。
+此外，该体系结构可以接受来自不同模式传感器的输入。},
+  eprint        = {1702.01638},
+  url           = {http://arxiv.org/abs/1702.01638},
+}
+
+@Article{Ord2016Deep,
+  author  = {Ordóñez, F. J. and Roggen, D},
+  title   = {Deep Convolutional and LSTM Recurrent Neural Networks for Multimodal Wearable Activity Recognition},
+  journal = {Sensors},
+  year    = {2016},
+  volume  = {16},
+  number  = {1},
+  pages   = {115},
+  comment = {Similarly, Ordóñez and Roggen (2016) proposed a convolutional neural network and long short term memory to automatically learn translational invariant features and model temporal dependencies in multimodal sensor comprise of accelerometer and gyroscope sensor. The pooling layer in the network was replaced with a recurrent layer (LSTM) that models the temporal sequence, whereas the final layer is the SoftMax regression that produces the class prediction. The technique was compared with baseline CNN using OPPORTUNITY and Skoda datasets with 0.61F1 score performance.
+
+同样，Ordonez和Roggen(2016)提出了一种卷积神经网络和长短期记忆的方法，在由加速度计和陀螺仪传感器组成的多模态传感器中自动学习平移不变特征和建模时间依赖性。
+网络中的池化层被建模时间序列的递归层(LSTM)所替代，而最后一层是产生类预测的SoftMax回归。
+将该技术与使用OPPORTUNITY和Skoda数据集的基线CNN进行比较，得分为0.61F1。
+
+In [15], the authors propose a generic deep framework for activity recognition based on convolutional and long short-term memory (LSTM) recurrent units.},
+}
+
+@InProceedings{Morales2016Deep,
+  author    = {Morales, Francisco Javier Ordóñez and Roggen, Daniel},
+  title     = {Deep convolutional feature transfer across mobile activity recognition domains, sensor modalities and locations},
+  booktitle = {Acm International Symposium on Wearable Computers},
+  year      = {2016},
+  comment   = {To develop a multi-fusion architecture of CNN and LSTM, Morales and Roggen (2016) examined the effect of transfer learning at the network kernel between users, applications domains, sensor modalities and sensor placements in human activity recognition. They noted that transfer learning greatly reduced training time and are sensitive to sensor characteristics, placement and motion dynamic. They utilised the above automatic feature representation method to develop a hybrid of CNN and LSTM for extraction of robust features for human activity recognition in a wearable device.
+
+Morales和Roggen(2016)为了开发CNN和LSTM的多融合架构，研究了在人类活动识别中，用户、应用领域、传感器模式和传感器位置之间的网络内核传输学习的效果。
+他们指出，转移学习大大减少了训练时间，并且对传感器的特性、位置和动态运动非常敏感。
+他们利用上述自动特征表示方法，将CNN和LSTM相结合，提取出鲁棒特征，用于可穿戴设备的人类活动识别。},
+}
+
+@Article{Yao2016DeepSense,
+  author  = {Yao, Shuochao and Hu, Shaohan and Zhao, Yiran and Zhang, Aston and Abdelzaher, Tarek},
+  title   = {DeepSense: A Unified Deep Learning Framework for Time-Series Mobile Sensing Data Processing},
+  year    = {2016},
+  comment = {Alternatively, a convolutional neural network with Gated Recurrent Unit (GRU) was proposed by S. Yao, Hu, Zhao, Zhang, and Abdelzaher (2016) for activity recognition and car tracking using accelerometer, gyroscope and magnetometer data. CNN and GRU were integrated to extract local interaction among identical mobile sensor, merged into global interaction and then extract temporal interaction to model signal dynamics.
+
+另外，S. Yao，胡，Zhao, Zhang, Abdelzaher(2016)利用加速度计、陀螺仪、磁力计数据提出了一种基于门控回归单元的卷积神经网络(tional neural network with gate Unit, GRU)，用于活动识别和车辆跟踪。
+融合CNN和GRU提取相同移动传感器之间的局部交互，融合到全局交互中，提取时间交互，对信号动力学建模。},
+}
+
+@Article{alzantot2017sensegen:,
+  author  = {Alzantot, Moustafa and Chakraborty, Supriyo and Srivastava, Mani B},
+  title   = {SenseGen: A deep learning architecture for synthetic sensor data generation},
+  journal = {pervasive computing and communications},
+  year    = {2017},
+  pages   = {188--193},
+  comment = {In recent work, Alzantot, Chakraborty, and Srivastava (2017) explored generation of artificial activity data by fusion of mixture density network and long short term memory. The approach was proposed to resolve the issue of lack of training data using mobile phones and discriminate robust feature vectors. Developing protocol to collect large training data for human activity recognition project is very tedious and may result to privacy violations. Therefore, the study generated synthetic data to augment the training sensor data generated using mobile phone. Moreover, the developed fusion of mixture density networks and long short term memory will help to reduce reliance on real training data for evaluation of deep learning.
+
+Alzantot、Chakraborty、Srivastava(2017)在近期的研究中，探索了混合密度网络与长、短期记忆融合生成人工活动数据的方法。
+针对移动电话训练数据缺乏的问题，提出了一种鲁棒特征向量识别方法。
+开发针对人类活动识别项目的大规模训练数据采集协议非常繁琐，可能会导致隐私侵犯。
+因此，本研究生成合成数据，对使用手机生成的训练传感器数据进行扩充。
+此外，混合密度网络和长、短期记忆的融合将有助于减少对真实训练数据的依赖，以评估深度学习。},
+}
+
+@InProceedings{Jian2015Deep,
+  author    = {Jian, Bo Yang and Nguyen, Minh Nhut and San, Phyo Phyo and Xiao, Li Li and Krishnaswamy, Shonali},
+  title     = {Deep Convolutional Neural Networks On Multichannel Time Series For Human Activity Recognition},
+  booktitle = {International Conference on Artificial Intelligence},
+  year      = {2015},
+}
+
+@Article{guan2017ensembles,
+  author  = {Guan, Yu and Plotz, Thomas},
+  title   = {Ensembles of Deep LSTM Learners for Activity Recognition using Wearables},
+  journal = {arXiv: Learning},
+  year    = {2017},
+  volume  = {1},
+  number  = {2},
+  pages   = {11},
+  comment = {Guan and Plotz [28] proposed an ensemble model to combine sets of diverse LSTM learners for HAR.
+
+},
+}
+
+@Article{8467310,
+  author   = {R. {Xi} and M. {Li} and M. {Hou} and M. {Fu} and H. {Qu} and D. {Liu} and C. R. {Haruna}},
+  title    = {Deep Dilation on Multimodality Time Series for Human Activity Recognition},
+  journal  = {IEEE Access},
+  year     = {2018},
+  volume   = {6},
+  pages    = {53381-53396},
+  issn     = {2169-3536},
+  doi      = {10.1109/ACCESS.2018.2870841},
+  keywords = {convolution;feature extraction;feedforward neural nets;learning (artificial intelligence);pattern classification;probability;recurrent neural nets;time series;class probability distribution;softmax function;recurrent model;GRU;LSTM;feature extraction;spatial dependency;multimodality time series;deep dilation;open human activity datasets;dilation operation;long-temporal dependencies;intra-sensors;inter-sensors;convolutional neural network;human activity recognition problems;deep learning framework;Feature extraction;Machine learning;Convolution;Activity recognition;Training;Time series analysis;Dilation operation;deep learning;feature representation;human activity recognition;multimodality time series},
+}
+
+@InProceedings{Lee2017Human,
+  author    = {Lee, Song Mi and Sang, Min Yoon and Cho, Heeryon},
+  title     = {Human activity recognition from accelerometer data using Convolutional Neural Network},
+  booktitle = {IEEE International Conference on Big Data \& Smart Computing},
+  year      = {2017},
+}
+
+@Article{Hannink2016Sensor,
+  author  = {Hannink, J and Kautz, T and Pasluosta, C and Gassmann, K. G. and Klucken, J and Eskofier, B},
+  title   = {Sensor-based Gait Parameter Extraction with Deep Convolutional Neural Networks},
+  journal = {IEEE Journal of Biomedical \& Health Informatics},
+  year    = {2016},
+  volume  = {21},
+  number  = {1},
+  pages   = {85-93},
+}
+
+@Article{Kim2017Human,
+  author  = {Kim, Youngwook and Yang, Li},
+  title   = {Human Activity Classification with Transmission and Reflection Coefficients of On-Body Antennas Through Deep Convolutional Neural Networks},
+  journal = {IEEE Transactions on Antennas \& Propagation},
+  year    = {2017},
+  volume  = {65},
+  number  = {99},
+  pages   = {1-1},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
